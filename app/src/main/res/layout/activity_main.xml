@@ -159,7 +159,7 @@
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="164dp"
-        android:layout_height="48dp"
+        android:layout_height="49dp"
         android:layout_marginTop="32dp"
         android:entries="@array/spinner_Departamentos"
         app:layout_constraintEnd_toEndOf="parent"
