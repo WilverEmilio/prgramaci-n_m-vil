@@ -19,4 +19,10 @@
     <string name="tel_fono1">Teléfono: No disponible</string>
     <string name="edad1">Edad: No disponible</string>
     <string name="email1">Email: No disponible</string>
+
+    <string-array name = "spinner_Departamentos">
+        <item>Guatemala</item>
+        <item>Quetzaltengango</item>
+        <item>Sacatepequez</item>
+    </string-array>
 </resources>
