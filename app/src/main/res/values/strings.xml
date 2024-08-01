@@ -19,4 +19,18 @@
     <string name="tel_fono1">Teléfono: No disponible</string>
     <string name="edad1">Edad: No disponible</string>
     <string name="email1">Email: No disponible</string>
+
+    <string-array name = "spinner_Departamentos">
+        <item>Guatemala</item>
+        <item>Quetzaltengango</item>
+        <item>Sacatepequez</item>
+        </string-array>
+
+
+    <string name="api_error_response">Error en la respuesta de la API</string>
+    <string name="api_error_failure">Error al consumir la API</string>
+    <string name="error_message">Error: %1$s</string>
+    <string name="please_fill_all_fields">Por favor, llena todos los campos</string>
+    <string name="welcome_message">Bienvenido!</string>
 </resources>
+

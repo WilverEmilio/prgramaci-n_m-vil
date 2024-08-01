@@ -39,5 +39,8 @@ class pantalla2 : AppCompatActivity() {
         phoneTextView.text = "Teléfono: $phone"
         ageTextView.text = "Edad: $age"
         emailTextView.text = "Email: $email"
+
+
+
     }
 }
