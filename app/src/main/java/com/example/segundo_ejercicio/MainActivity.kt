@@ -2,7 +2,11 @@ package com.example.segundo_ejercicio
 
 import android.content.Intent
 import android.os.Bundle
+<<<<<<< HEAD
 import android.util.Log
+=======
+import android.provider.ContactsContract.CommonDataKinds.Phone
+>>>>>>> 88571e7662ade8cf6280261044f295dcc206ef7a
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
@@ -12,13 +16,29 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+<<<<<<< HEAD
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+=======
+import com.google.gson.Gson
+>>>>>>> 88571e7662ade8cf6280261044f295dcc206ef7a
 
 @Suppress("NAME_SHADOWING")
 class MainActivity : AppCompatActivity() {
 
+<<<<<<< HEAD
+=======
+    val JsonString: String = "{\n" +
+            "\"Estados\": [\n" +
+            "\"Soltero\",\n" +
+            "\"Casado\",\n" +
+            " \"Divorciado\"\n" +
+            "]\n" +
+            "}"
+
+    @SuppressLint("CommitPrefEdits")
+>>>>>>> 88571e7662ade8cf6280261044f295dcc206ef7a
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -60,6 +80,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Por favor, llena todos los campos", Toast.LENGTH_SHORT).show()
             }
         }
+<<<<<<< HEAD
 
         val stringArrayCarreras = arrayOf("Ingeniería", "Medicina", "Licenciatura")
         val spinnerCarreras: Spinner = findViewById(R.id.spn2)
@@ -139,5 +160,21 @@ class MainActivity : AppCompatActivity() {
                 Log.e("MainActivity", "Error al consumir la API", t)
             }
         })
+=======
+        val stringArrayCarreras = arrayOf("Ingenieria", "Medicina", "Licenciatura")
+
+        val spinner: Spinner = findViewById(R.id.spinner2)
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, stringArrayCarreras)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinner.adapter = adapter
+
+        val gson = Gson()
+        val itemsResponse = gson.fromJson(JsonString, estados::class.java)
+
+        val spinnerEstado: Spinner = findViewById(R.id.spinner3)
+        val adapterEstado = ArrayAdapter(this, android.R.layout.simple_spinner_item,itemsResponse.Estados)
+        adapterEstado.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinnerEstado.adapter = adapterEstado
+>>>>>>> 88571e7662ade8cf6280261044f295dcc206ef7a
     }
 }

@@ -24,6 +24,7 @@
         <item>Guatemala</item>
         <item>Quetzaltengango</item>
         <item>Sacatepequez</item>
+<<<<<<< HEAD
         </string-array>
 
 
@@ -34,3 +35,7 @@
     <string name="welcome_message">Bienvenido!</string>
 </resources>
 
+=======
+    </string-array>
+</resources>
+>>>>>>> 88571e7662ade8cf6280261044f295dcc206ef7a
